@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="14490.70" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina5_5" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14490.49"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" rowHeight="188" id="ZE7-Wq-qRo" customClass="SliderTableViewCell" customModule="Senior_Table_Collection_View" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="355" height="188"/>
+            <autoresizingMask key="autoresizingMask"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" ambiguous="YES" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="ZE7-Wq-qRo" id="yid-3i-Pvp">
+                <rect key="frame" x="0.0" y="0.0" width="355" height="187.66666666666666"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" pagingEnabled="YES" showsHorizontalScrollIndicator="NO" showsVerticalScrollIndicator="NO" dataMode="none" translatesAutoresizingMaskIntoConstraints="NO" id="R4t-uZ-6Nx">
+                        <rect key="frame" x="0.0" y="0.0" width="342" height="189.66666666666666"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstAttribute="width" constant="342" id="O9X-Uh-8lY"/>
+                            <constraint firstAttribute="height" constant="189.5" id="dyS-Cb-a82"/>
+                        </constraints>
+                        <collectionViewFlowLayout key="collectionViewLayout" scrollDirection="horizontal" minimumLineSpacing="10" minimumInteritemSpacing="10" id="XGg-oa-et9">
+                            <size key="itemSize" width="50" height="50"/>
+                            <size key="headerReferenceSize" width="0.0" height="0.0"/>
+                            <size key="footerReferenceSize" width="0.0" height="0.0"/>
+                            <inset key="sectionInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
+                        </collectionViewFlowLayout>
+                        <connections>
+                            <outlet property="dataSource" destination="ZE7-Wq-qRo" id="eW1-DF-Vdu"/>
+                            <outlet property="delegate" destination="ZE7-Wq-qRo" id="r88-bu-10W"/>
+                        </connections>
+                    </collectionView>
+                </subviews>
+                <constraints>
+                    <constraint firstItem="R4t-uZ-6Nx" firstAttribute="leading" secondItem="yid-3i-Pvp" secondAttribute="leading" id="1O9-Z7-yC2"/>
+                    <constraint firstAttribute="trailing" secondItem="R4t-uZ-6Nx" secondAttribute="trailing" id="Eup-7R-vex"/>
+                    <constraint firstItem="R4t-uZ-6Nx" firstAttribute="top" secondItem="yid-3i-Pvp" secondAttribute="top" id="J5g-Rs-4KG"/>
+                    <constraint firstAttribute="bottom" secondItem="R4t-uZ-6Nx" secondAttribute="bottom" id="w6P-7T-Pav"/>
+                </constraints>
+            </tableViewCellContentView>
+            <connections>
+                <outlet property="CollectionView" destination="R4t-uZ-6Nx" id="e8X-pZ-hqK"/>
+                <outlet property="hightConst" destination="dyS-Cb-a82" id="EIn-Oj-ku4"/>
+                <outlet property="widthConst" destination="O9X-Uh-8lY" id="Q0h-By-Muv"/>
+            </connections>
+            <point key="canvasLocation" x="544.20289855072463" y="-859.23913043478262"/>
+        </tableViewCell>
+    </objects>
+</document>
